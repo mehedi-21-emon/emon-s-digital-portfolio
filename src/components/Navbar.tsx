@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import profilePhoto from "@/assets/Mehedi.jpg";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -17,8 +18,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold text-gradient font-mono">
-          MH<span className="text-foreground">.</span>
+        <a href="#" className="flex items-center gap-2">
+          <img src={profilePhoto} alt="Mehedi Hasan Emon" className="w-9 h-9 rounded-full object-cover border-2 border-primary/30" />
+          <span className="text-lg font-bold text-gradient font-mono">MH<span className="text-foreground">.</span></span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
