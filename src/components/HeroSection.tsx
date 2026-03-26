@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
+import profilePhoto from "@/assets/Mehedi.jpg";
 
 const HeroSection = () => {
   return (
@@ -12,9 +13,22 @@ const HeroSection = () => {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="mb-6"
+        >
+          <img
+            src={profilePhoto}
+            alt="Mehedi Hasan Emon"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-primary/30 shadow-lg shadow-primary/10"
+          />
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
         >
           <p className="font-mono text-primary text-sm mb-4 tracking-widest uppercase">
             Welcome to my portfolio
