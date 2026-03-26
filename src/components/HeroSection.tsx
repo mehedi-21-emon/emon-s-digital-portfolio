@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, Mail, Download } from "lucide-react";
 import profilePhoto from "@/assets/Mehedi.jpg";
 
 const HeroSection = () => {
@@ -75,6 +75,14 @@ const HeroSection = () => {
           >
             View Projects
             <ArrowDown size={18} />
+          </a>
+          <a
+            href="/Mehedi_Hasan_Emon.pdf"
+            download
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg border border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors font-semibold"
+          >
+            <Download size={18} />
+            Download CV
           </a>
           <a
             href="#contact"
