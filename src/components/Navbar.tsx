@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <img src={profilePhoto} alt="Mehedi Hasan Emon" className="w-9 h-9 rounded-full object-cover border-2 border-primary/30" />
-          <span className="text-lg font-bold text-gradient font-mono">MH<span className="text-foreground">.</span></span>
+          <span className="text-lg font-bold text-gradient font-mono">MHE<span className="text-foreground">.</span></span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
