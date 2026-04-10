@@ -52,7 +52,7 @@ const ContactSection = () => {
     } catch {
       // Fallback to mailto
       const mailtoLink = `mailto:emonmehedihasan021@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom: ${encodeURIComponent(form.email)}`;
-      window.open(mailtoLink);
+      window.location.href = mailtoLink;
       setStatus("idle");
     }
   };
